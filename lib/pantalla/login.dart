@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mercados_campesino_app/pantalla/cuenta.dart';
 class PantallaLogin extends StatefulWidget {
   const PantallaLogin({super.key});
 
@@ -8,13 +9,6 @@ class PantallaLogin extends StatefulWidget {
 class _PantallaLoginState extends State<PantallaLogin> {
   final _correoController = TextEditingController();
   final _contrasenaController = TextEditingController();
-
-  @override
-  void dispose() {
-    _correoController.dispose();
-    _contrasenaController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +38,7 @@ class _PantallaLoginState extends State<PantallaLogin> {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => PantallaLogin(
+                  MaterialPageRoute(builder: (context) => PantallaCuenta(
                     correo: _correoController.text,
                     contrasena: _contrasenaController.text,
                   )),
