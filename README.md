@@ -2,7 +2,7 @@
 ## Flujo de la aplicación
 ```mermaid
 flowchart LR
-    A[Login] -->|Toca "Iniciar sesión"| B[Cuenta]
+    A[Login] -->|Toca boton Iniciar sesion| B[Cuenta]
 ```
 
 ## Tabla de saltos
